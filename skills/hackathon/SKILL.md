@@ -1,12 +1,12 @@
 ---
 name: hackathon
-description: Hackathon mode for pre-launch projects with no users. Ship straight to main and prod without asking, and skip migration, data-loss, legal-versioning and refactor caution. Load it when the user types /hackathon, or when the project's CLAUDE.md or AGENTS.md has a "Hackathon mode: ON" block. Never apply it to a project that has neither. `/hackathon install` turns it on for the current project and `/hackathon off` turns it off.
+description: Hackathon mode for pre-launch projects with no users. Ship straight to main and prod without asking, and skip migration, data-loss, legal-versioning and refactor caution. Load it when the user types /yolovibe:hackathon, or when the project's CLAUDE.md or AGENTS.md has a "Hackathon mode: ON" block. Never apply it to a project that has neither. `/yolovibe:hackathon install` turns it on for the current project and `/yolovibe:hackathon off` turns it off.
 argument-hint: "[install | off]"
 ---
 
 # Hackathon mode
 
-> ⚠️ **Fair warning:** this skill removes the safety habits that protect real users. Use it only while **nobody outside the team uses the product**. **When you start onboarding users (beta testers, a first customer, a public launch), run `/hackathon off` or delete this skill.** From then on, migrations, data loss, policy changes and deploys matter again.
+> ⚠️ **Fair warning:** this skill removes the safety habits that protect real users. Use it only while **nobody outside the team uses the product**. **When you start onboarding users (beta testers, a first customer, a public launch), run `/yolovibe:hackathon off` or uninstall the plugin.** From then on, migrations, data loss, policy changes and deploys matter again.
 
 ## Arguments
 
@@ -19,8 +19,8 @@ Marker block to insert:
 ```markdown
 ## Hackathon mode: ON
 
-No users yet. Claude follows the `hackathon` skill: commit and push to main, deploy to prod, and don't ask.
-⚠️ Remove this block (`/hackathon off`) before onboarding the first user. Once it is gone, normal caution applies.
+No users yet. Claude follows the `yolovibe:hackathon` skill (https://github.com/teebot/YOLOVIBE): commit and push to main, deploy to prod, and don't ask.
+⚠️ Remove this block (`/yolovibe:hackathon off`) before onboarding the first user. Once it is gone, normal caution applies.
 ```
 
 ## The premise
@@ -70,7 +70,7 @@ These are not about users, so hackathon mode does not relax them:
 
 ## When to stop using this skill
 
-As soon as any of these is true, tell the user and suggest `/hackathon off`:
+As soon as any of these is true, tell the user and suggest `/yolovibe:hackathon off`:
 
 - A real user or customer signs up, or a beta or launch is announced.
 - Real personal or customer data lands in the prod database.

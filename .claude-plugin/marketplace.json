@@ -1,0 +1,15 @@
+{
+  "name": "yolovibe",
+  "description": "Hackathon-mode skill for Claude Code. Remove it before onboarding users.",
+  "owner": {
+    "name": "teebot",
+    "url": "https://github.com/teebot"
+  },
+  "plugins": [
+    {
+      "name": "yolovibe",
+      "source": "./",
+      "description": "Hackathon mode for pre-launch projects: push to main, deploy to prod, no caution. Remove it before onboarding users."
+    }
+  ]
+}

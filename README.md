@@ -2,21 +2,23 @@
 
 A [Claude Code](https://claude.com/claude-code) skill for hackathon mode: commit and push to `main`, deploy to prod, and don't ask. While a project has no users, it also skips caution about migrations, data loss, policy versioning and refactors.
 
-> ⚠️ **Fair warning:** this skill removes the safety habits that protect real users. Use it only while **nobody outside the team uses the product**. **When you start onboarding users (beta testers, a first customer, a public launch), run `/hackathon off` or delete this skill.**
+> ⚠️ **Fair warning:** this skill removes the safety habits that protect real users. Use it only while **nobody outside the team uses the product**. **When you start onboarding users (beta testers, a first customer, a public launch), run `/yolovibe:hackathon off` or uninstall the plugin.**
 
 ## Install
 
-```sh
-git clone https://github.com/teebot/YOLOVIBE.git /tmp/yolovibe
-mkdir -p ~/.claude/skills && cp -r /tmp/yolovibe/skills/hackathon ~/.claude/skills/
+In Claude Code:
+
+```
+/plugin marketplace add teebot/YOLOVIBE
+/plugin install yolovibe@yolovibe
 ```
 
-The skill is then available in every project, but it only applies where you turn it on.
+The skill is then available in every project, but it only applies where you turn it on. To get new versions, run `/plugin marketplace update yolovibe`. To remove it, run `/plugin uninstall yolovibe@yolovibe`.
 
 ## Use
 
-- `/hackathon install` turns hackathon mode on for the current project. It adds a "Hackathon mode: ON" block to the project's `CLAUDE.md` (or `AGENTS.md`), so later sessions keep following it.
-- `/hackathon off` removes the block, and normal caution comes back.
+- `/yolovibe:hackathon install` turns hackathon mode on for the current project. It adds a "Hackathon mode: ON" block to the project's `CLAUDE.md` (or `AGENTS.md`), so later sessions keep following it.
+- `/yolovibe:hackathon off` removes the block, and normal caution comes back.
 
 ## What it relaxes
 
@@ -30,4 +32,4 @@ The skill is then available in every project, but it only applies where you turn
 
 Never commit or print secrets. Read cloud config before replacing it. Don't force-push `main`. Don't touch third parties or systems you don't own. Watch for uncapped spend.
 
-See [`skills/hackathon/SKILL.md`](skills/hackathon/SKILL.md) for the full rules.
+See [`skills/hackathon/SKILL.md`](skills/hackathon/SKILL.md) for the full rules. Licensed under [MIT](LICENSE).

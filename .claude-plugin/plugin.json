@@ -1,0 +1,10 @@
+{
+  "name": "yolovibe",
+  "version": "1.0.0",
+  "description": "Hackathon mode for pre-launch projects: push to main, deploy to prod, no caution about migrations, data loss, policies or refactors. Remove it before onboarding users.",
+  "author": { "name": "teebot", "url": "https://github.com/teebot" },
+  "homepage": "https://github.com/teebot/YOLOVIBE",
+  "repository": "https://github.com/teebot/YOLOVIBE",
+  "license": "MIT",
+  "keywords": ["hackathon", "deploy", "workflow"]
+}
