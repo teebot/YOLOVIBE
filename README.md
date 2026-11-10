@@ -33,3 +33,5 @@ The skill is then available in every project, but it only applies where you turn
 Never commit or print secrets. Read cloud config before replacing it. Don't force-push `main`. Don't touch third parties or systems you don't own. Watch for uncapped spend.
 
 See [`skills/hackathon/SKILL.md`](skills/hackathon/SKILL.md) for the full rules. Licensed under [MIT](LICENSE).
+
+The 🤷 icon is from [Noto Emoji](https://github.com/googlefonts/noto-emoji) by Google, under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
